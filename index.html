@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
 </head>
 <body>
     <div class="wrapper">
@@ -35,9 +36,9 @@
             
             <input type="text" id="currOutput">
             <form action="/" method="post">
-                <select name="currency" id="outputCurrencySelector">
-                    <option value="RUB">RUB</option>
+                <select name="currency"  id="outputCurrencySelector">
                     <option value="USD">USD</option>
+                    <option selected value="RUB">RUB</option>
                     <option value="EUR">EUR</option>
                     <option value="GBP">GBP</option>
                     <option value="JPY">JPY</option>
@@ -49,7 +50,7 @@
         </div>
     </div>
 
-    <script src="convert.js"></script>
-    <script src="script.js"></script>
+    <script src="scriptMain.js"></script>
+    <!--<script src="script.js"></script>-->
 </body>
 </html>
